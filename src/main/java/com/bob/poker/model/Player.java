@@ -1,0 +1,22 @@
+package com.bob.poker.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Player {
+    private String name;
+    private List<Card> cards = new ArrayList<>();
+
+    public Player(String name) {
+        this.name = name;
+    }
+}
